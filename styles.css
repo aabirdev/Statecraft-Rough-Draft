@@ -1,0 +1,84 @@
+
+        body {
+            margin:0px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: #121629;
+        }
+
+        #nav{
+            background-color: #fffffe;
+            width:1280px;
+            height:auto;
+            padding:10px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            color:#232946;
+            position:fixed;
+
+        }
+
+        #nav > a,h1 {
+            
+            margin:auto;
+            transition:2s;
+            cursor:pointer;
+            font-weight:900px;
+        }
+
+        #nav > a {
+            margin:auto;
+            transition:750ms;
+            cursor:pointer;
+            font-size: 20px;
+            text-decoration:white underline;
+            color:#232946;
+        }
+
+        #nav > h1 {
+            margin-left:5px;
+        }
+      
+        #nav > a:hover {
+            color:black;
+            background-color: white;
+            padding: 10px;
+            font-size:20px;
+            text-decoration:underline;
+            text-decoration-color: #b8c1ec;
+        }
+
+        #statecraft-returns-image {
+            width:1280px;
+            height: auto;
+        }
+
+        
+
+        .committee-box {
+            display:Flex;
+            flex-direction: row;
+            background: white;
+            margin:15px;
+            box-shadow: 2px 2px 10px lightslategray;
+            padding:12px;
+          }
+
+        .committee-logo {
+            width:700px;
+            height:400px;
+            margin-right:10px;
+            box-shadow: 2px 2px 10px lightslategray;
+        }
+
+        .go-to-study-guide,.go-to-committee-matrix {
+            color:white;
+            background-color:brown;
+            font-weight:900px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+
+
+    
