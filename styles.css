@@ -1,7 +1,7 @@
 
         body {
             margin:0px;
-            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-family: "Poppins", sans-serif;
             background-color: #121629;
         }
 
@@ -15,7 +15,7 @@
             justify-content: center;
             color:#232946;
             position:fixed;
-
+            z-index: 1;
         }
 
         #nav > a,h1 {
@@ -48,36 +48,73 @@
             text-decoration-color: #b8c1ec;
         }
 
+        #reveal-tab {
+            display:block;
+            flex-direction: column;
+            width:1260px;
+            height:max-content;
+            margin:10px;
+            background-color: #121629;
+            color:White;
+            margin-top:50px;
+            margin-bottom:50px;
+        }
+
+        #reveal-tab-title {
+            display: flex;
+            justify-self: center;
+            font-size:55px;
+            width:max-content;
+            
+        }
+
+        #reveal-tab-subtitle {
+            font-weight: lighter;
+            font-size:30px;
+            width:350px;
+            margin:auto;
+        }
+
+       #actual-theme {
+        background-color: #b8c1ec;
+        display:none;
+        height:max-content;
+       }
+
+       #theme-image {
+        opacity: 0%;
+        transition:2s;
+        width:1260px;
+        height:auto;
+        margin-top:0px;
+        margin-bottom:0px;
+       }
+
+        #committees-anim {
+            margin-top:0px;
+            width:1260px;
+            height:auto;
+        }
+
         #statecraft-returns-image {
-            width:1280px;
+            width:1260px;
             height: auto;
+            margin-top:20px;
+            margin-bottom: 0px;
         }
 
-        
+        #general-rules-reg-img {
+            width:1260px;
+            height:auto;
 
-        .committee-box {
-            display:Flex;
-            flex-direction: row;
-            background: white;
-            margin:15px;
-            box-shadow: 2px 2px 10px lightslategray;
-            padding:12px;
-          }
-
-        .committee-logo {
-            width:700px;
-            height:400px;
-            margin-right:10px;
-            box-shadow: 2px 2px 10px lightslategray;
         }
 
-        .go-to-study-guide,.go-to-committee-matrix {
-            color:white;
-            background-color:brown;
-            font-weight:900px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        #general-rules-regs {
+            background-color: #b8c1ec;
+            color:#121629;
+            font-size:20px;
+            line-height:50px;
         }
-
 
 
 

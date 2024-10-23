@@ -3,6 +3,9 @@
     <head>
         <title>Statecraft Website Rough Draft</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -19,22 +22,32 @@
             <img id="statecraft-returns-image" src="statecraft-landing.svg">
         </div>
 
-        <div id="statecraft-timeline">
-            <p id="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, vel voluptatem quas ex similique ea eligendi, quasi, minima accusamus deleniti animi maxime. Optio, eveniet architecto necessitatibus labore veritatis quae modi.</p>
+        <div id="reveal-tab" onclick="revealtheme()">
+          <h1 id="reveal-tab-title">STATECRAFT'S THEME THIS YEAR...</h1>
+          <h3 id="reveal-tab-subtitle">Click to reveal</h3>
         </div>
 
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-        <div id="animation-container">
-            <dotlottie-player id="committees-anim" src="https://lottie.host/074a97a4-faf3-4c07-a30a-04709516c5a4/XNyuNAu4yf.json" background="transparent" speed="1" style="width: 1280px; height: 700px;" autoplay></dotlottie-player>
+        <div id="actual-theme">
+          <img id="theme-image" src="statecraft-theme.svg">
         </div>
 
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+      <dotlottie-player id="committees-anim" src="https://lottie.host/ee55482b-de4c-4c37-b158-f180ca4bf190/amS9TvcWbb.json" background="transparent" speed="1" autoplay></dotlottie-player>
+
+     <div id="general-rules-regs">
+      <img id="general-rules-reg-img" src="statecraft-general-rules-and-regs.svg">
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga vitae non, error architecto sunt nihil facilis magni fugiat numquam aspernatur dicta culpa excepturi accusamus, nemo rerum repudiandae consectetur eaque?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis consequuntur odit ratione quidem pariatur accusamus soluta dignissimos nihil blanditiis rerum, sequi nostrum quis sunt corporis quia tempore illo exercitationem!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis consequuntur odit ratione quidem pariatur accusamus soluta dignissimos nihil blanditiis rerum, sequi nostrum quis sunt corporis quia tempore illo exercitationem!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis consequuntur odit ratione quidem pariatur accusamus soluta dignissimos nihil blanditiis rerum, sequi nostrum quis sunt corporis quia tempore illo exercitationem!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis consequuntur odit ratione quidem pariatur accusamus soluta dignissimos nihil blanditiis rerum, sequi nostrum quis sunt corporis quia tempore illo exercitationem!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis consequuntur odit ratione quidem pariatur accusamus soluta dignissimos nihil blanditiis rerum, sequi nostrum quis sunt corporis quia tempore illo exercitationem!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis consequuntur odit ratione quidem pariatur accusamus soluta dignissimos nihil blanditiis rerum, sequi nostrum quis sunt corporis quia tempore illo exercitationem!</li>
+
+      </ul>
+     </div>
     
     <script>
         LottieInteractivity.create({
@@ -48,6 +61,18 @@
             },
           ]
         });
+      </script>
+
+      <script>
+        const rvltab = document.getElementById("reveal-tab");
+        const theme = document.getElementById("actual-theme");
+        const imgtheme = document.getElementById("theme-image");
+
+        function revealtheme() {
+         rvltab.style.display = "none";
+         theme.style.display = "block"
+         imgtheme.style.opacity = "100%";
+        }
       </script>
       
     </body>
