@@ -76,15 +76,15 @@
         }
 
        #actual-theme {
-        background-color: #b8c1ec;
+        background-color: #121629;
         display:none;
-        height:max-content;
+        height:min-content;
        }
 
        #theme-image {
         opacity: 0%;
         transition:2s;
-        width:1260px;
+        width:1270px;
         height:auto;
         margin-top:0px;
         margin-bottom:0px;
