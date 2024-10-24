@@ -1,0 +1,215 @@
+
+        body {
+            margin:0px;
+            font-family: "Poppins", sans-serif;
+            background-color: #121629;
+        }
+
+        #nav{
+            background-color: #fffffe;
+            width:100%;
+            height:auto;
+            padding:10px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            color:#232946;
+            position:fixed;
+            z-index: 1;
+        }
+
+        #nav > a,h1 {
+            
+            margin:auto;
+            transition:2s;
+            cursor:pointer;
+            font-weight:900px;
+        }
+
+        #nav > a {
+            margin:auto;
+            transition:750ms;
+            cursor:pointer;
+            font-size: 20px;
+            text-decoration:white underline;
+            color:#232946;
+        }
+
+        #nav > h1 {
+            margin-left:5px;
+        }
+      
+        #nav > a:hover {
+            color:black;
+            background-color: white;
+            padding: 10px;
+            font-size:20px;
+            text-decoration:underline;
+            text-decoration-color: #b8c1ec;
+        }
+
+        #reveal-tab {
+            display:block;
+            flex-direction: column;
+            height:max-content;
+            margin:10px;
+            background-color: #121629;
+            color:White;
+            margin-top:50px;
+            margin-bottom:50px;
+            width:100%;
+        }
+
+        #reveal-tab-title {
+            display: flex;
+            justify-self: center;
+            font: size 55px;
+        }
+
+        #reveal-tab-subtitle {
+            font-weight: lighter;
+            font-size:32px;
+            margin:auto;
+
+        }
+
+       #actual-theme {
+        background-color: #121629;
+        display:none;
+        height:min-content;
+        width:100%;
+       }
+
+       #theme-image {
+        opacity: 0%;
+        transition:2s;
+        height:auto;
+        margin-top:0px;
+        margin-bottom:0px;
+        width:100%;
+       }
+
+        #committees-anim {
+            margin-top:0px;
+            height:auto;
+            width:100%;
+        }
+
+        #statecraft-returns-image {
+            height: auto;
+            margin-top:20px;
+            margin-bottom: 0px;
+            width:100%;
+        }
+
+        #statecraft-about-image {
+            width:100%;
+            height:auto;
+        }
+
+        #general-rules-reg-img {
+            height:auto;
+            width:100%;
+        }
+
+        #general-rules-regs {
+            background-color: #b8c1ec;
+            color:#121629;
+            font-size:20px;
+            line-height:50px;
+            width:100%;
+        }
+
+        #explore-title {
+            font-size:78px;
+            text-decoration: underline solid #176AE5;
+            display:flex;
+            margin:auto;
+            color:white;         
+        }
+
+        .explore-tab {
+            box-shadow:2px 2px 10px rgba(255, 255, 255, 0.404);
+            background-size:cover;
+            height:200px;
+            font-size:30px;
+            display: flex;
+            justify-items:center;
+            margin:auto;
+            border-radius: 40px;
+            width:28%;
+        }
+
+        #explore-row {
+            display:flex;
+            flex-direction: row;
+        }
+
+        #committees-explore {
+            background-color:burlywood;
+        }
+
+        #oc-explore {
+            background-color: lightseagreen;
+            text-align:center;
+        }
+
+        #regi-explore {
+            background-color: orangered;
+        }
+
+        .explore-anchor {
+            color: white;
+            text-decoration: none;
+            font-weight:900px;
+            margin:auto;
+        }
+
+        @media screen and (min-width: 1920px) {
+            #nav > a{
+                font-size:32px;
+            }
+
+            #nav > h1 {
+                font-size:35px;
+            }
+        }
+
+        #reg-procedure-img {
+            width:100%;
+            height:auto;
+        }
+
+        #reg-procedure {
+            color:white;
+            font-size:20px;
+            line-height:50px;
+            width:100%;
+            background-color: #121629;
+        }
+
+        #reg-procedure-text {
+            margin:20px;
+        }
+
+        #REGISTER {
+            padding:25px;
+            background-color: #176AE5;
+            color:white;
+            font-size:30px;
+            width:max-content;
+            height:max-content;
+            font-weight:900px;
+            border:none;
+            border-radius:80px;
+
+        }
+
+        #button-container {
+            display:flex;
+            justify-self:center;
+            margin: top 60px;
+            box-shadow:none;
+
+        }
+
