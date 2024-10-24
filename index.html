@@ -9,6 +9,9 @@
     </head>
 
     <body>
+        
+
+
         <div id="nav">
                 <h1 id="title-nav">STATECRAFT</h1>
                 <a id="home-anchor" href="index.html">ABOUT STATECRAFT</a>
@@ -23,7 +26,7 @@
         </div>
 
         <div id="about-statecraft">
-          <img id="statecraft-about-image" src="statecraft-about.svg" style="width:1270px; height:auto;">
+          <img id="statecraft-about-image" src="statecraft-about.svg" >
         </div>
 
         <div id="reveal-tab" onclick="revealtheme()">
@@ -51,7 +54,28 @@
 
       </ul>
      </div>
-    
+     <div id="explore-title">
+      
+      <h1>EXPLORE</h1>
+      
+     </div>
+     <div id="explore-section">
+      <div id="explore-row">
+        <div class="explore-tab" id="committees-explore">
+          <a class="explore-anchor" href="committees.html">COMMITTEES</a>
+        </div>
+
+        <div class="explore-tab" id="oc-explore">
+          <a class="explore-anchor" href="oc25.html">ORGANIZING COMMITTEE</a>
+        </div>
+
+        <div class="explore-tab" id="regi-explore">
+          <a class="explore-anchor" href="register.html">REGISTER NOW!</a>
+        </div>
+
+      </div>
+     </div>
+
     <script>
         LottieInteractivity.create({
           player: '#committees-anim',
@@ -73,11 +97,12 @@
 
         function revealtheme() {
          rvltab.style.display = "none";
-         theme.style.display = "block"
+         theme.style.display = "flex"
          imgtheme.style.opacity = "100%";
          document.getElementById("about-statecraft").style.backgroundColor = "#b8c1ec";
         }
       </script>
+
       
     </body>
 </html>
