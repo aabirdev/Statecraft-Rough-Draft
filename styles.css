@@ -1,15 +1,17 @@
 
         body {
             margin:0px;
-            font-family: "Poppins", sans-serif;
+            font-family: "Merriweather", serif;
             background-color: #121629;
+            scroll-margin: 0px;
         }
 
         #nav{
+            font-family: "Poppins", serif;
             background-color: #fffffe;
             width:100%;
             height:auto;
-            padding:10px;
+            padding:top 10px bottom 10px;
             display:flex;
             flex-direction: row;
             justify-content: center;
@@ -18,21 +20,31 @@
             z-index: 1;
         }
 
-        #nav > a,h1 {
-            
+        #title-nav {
+            color:#121629;
+            text-decoration: none;
+            font-weight:bolder;
+        }
+
+        #nav > a,h1,button {
+            text-decoration: none;
             margin:auto;
             transition:2s;
             cursor:pointer;
             font-weight:900px;
         }
 
-        #nav > a {
+        #nav > a,button, #nav > ul > li > a {
             margin:auto;
             transition:750ms;
             cursor:pointer;
             font-size: 20px;
             text-decoration:white underline;
             color:#232946;
+        }
+
+        #nav > button {
+            font-size:20px;
         }
 
         #nav > h1 {
@@ -42,59 +54,13 @@
         #nav > a:hover {
             color:black;
             background-color: white;
-            padding: 10px;
+            padding:top 10px bottom 10px;
             font-size:20px;
             text-decoration:underline;
             text-decoration-color: #b8c1ec;
         }
 
-        #reveal-tab {
-            display:block;
-            flex-direction: column;
-            height:max-content;
-            margin:10px;
-            background-color: #121629;
-            color:White;
-            margin-top:50px;
-            margin-bottom:50px;
-            width:100%;
-        }
-
-        #reveal-tab-title {
-            display: flex;
-            justify-self: center;
-            font: size 55px;
-        }
-
-        #reveal-tab-subtitle {
-            font-weight: lighter;
-            font-size:32px;
-            margin:auto;
-
-        }
-
-       #actual-theme {
-        background-color: #121629;
-        display:none;
-        height:min-content;
-        width:100%;
-       }
-
-       #theme-image {
-        opacity: 0%;
-        transition:2s;
-        height:auto;
-        margin-top:0px;
-        margin-bottom:0px;
-        width:100%;
-       }
-
-        #committees-anim {
-            margin-top:0px;
-            height:auto;
-            width:100%;
-        }
-
+       
         #statecraft-returns-image {
             height: auto;
             margin-top:20px;
@@ -102,78 +68,8 @@
             width:100%;
         }
 
-        #statecraft-about-image {
-            width:100%;
-            height:auto;
-        }
+       
 
-        #general-rules-reg-img {
-            height:auto;
-            width:100%;
-        }
-
-        #general-rules-regs {
-            background-color: #b8c1ec;
-            color:#121629;
-            font-size:20px;
-            line-height:50px;
-            width:100%;
-        }
-
-        #explore-title {
-            font-size:78px;
-            text-decoration: underline solid #176AE5;
-            display:flex;
-            margin:auto;
-            color:white;         
-        }
-
-        .explore-tab {
-            box-shadow:2px 2px 10px rgba(255, 255, 255, 0.404);
-            background-size:cover;
-            height:200px;
-            font-size:30px;
-            display: flex;
-            justify-items:center;
-            margin:auto;
-            border-radius: 40px;
-            width:28%;
-        }
-
-        #explore-row {
-            display:flex;
-            flex-direction: row;
-        }
-
-        #committees-explore {
-            background-color:burlywood;
-        }
-
-        #oc-explore {
-            background-color: lightseagreen;
-            text-align:center;
-        }
-
-        #regi-explore {
-            background-color: orangered;
-        }
-
-        .explore-anchor {
-            color: white;
-            text-decoration: none;
-            font-weight:900px;
-            margin:auto;
-        }
-
-        @media screen and (min-width: 1920px) {
-            #nav > a{
-                font-size:32px;
-            }
-
-            #nav > h1 {
-                font-size:35px;
-            }
-        }
 
         #reg-procedure-img {
             width:100%;
@@ -205,6 +101,12 @@
 
         }
 
+        #REGISTER > a {
+            text-decoration: none;
+            color:white;
+            font-weight:900px;
+        }
+
         #button-container {
             display:flex;
             justify-self:center;
@@ -213,3 +115,239 @@
 
         }
 
+        #team-anchor {
+            background-color: transparent;
+            border:none;
+            color:#121629;
+        }
+
+        #letter-secr {
+            color:white; 
+            margin:left 10px right 10px;
+            justify-content: center;
+            padding-top:50px;
+        }
+
+        #letter-title, #letter-secondary-title {
+            display:block;
+            margin:top 150px;
+            width:100%;
+            margin:auto;
+            font-family: "Poppins", serif;
+            text-align:center;
+            font-weight:bolder;
+            font-size:53px;
+            color:white;
+        }
+
+        #letter-secondary-title {
+            margin-bottom: 50px;
+        }
+
+        #patelkaimg {
+            width:75%;
+            margin: auto;
+        }
+
+        #secgen {
+            font-weight: lighter;
+            font-style:italic;
+            font-size:20px;
+        }
+
+        #secgen-name {
+            margin-top:12px;
+            font-weight:bolder;
+            font-size:20px;
+        }
+
+        #actual-letter {
+            font-size:16.5px;
+            text-align:left;
+        }
+
+        #title-text {
+            color:white;
+            font-family: "Poppins", serif;
+            font-weight:bolder;
+            font-size:100px;
+        }
+
+        #subtitle-text { 
+            color:white;
+            font-weight: 300;
+            font-size:30px;
+        }
+
+        #subtitle-text-2 { 
+            color:white;
+            font-weight: 300;
+            font-size:48px;
+        }
+
+        #welcome-container {
+            width:100%;
+        }
+
+        #intro-text {
+            margin:auto;
+            text-align:center;
+        }
+
+        #marginadd {
+            text-align:center;
+        }
+
+        #act-carousel {
+            margin:10px;
+        }
+
+            
+        #question > h1{
+            font-family: "Poppins", serif;
+            font-size: 175px;
+            text-align: center;
+            font-weight: bolder;
+            color:#176AE5;
+            text-shadow:5px 5px #002679;
+        }
+
+        #question {
+            margin:auto;
+        }
+
+        #answer {
+            color:white;
+            text-align: left;
+            font-size:24px;
+            padding:bottom 50px top 50px;
+        }
+
+        #carousel-title {
+            font-family: "Poppins", serif;
+            text-align: center;
+            color:white;
+            text-shadow: 3px 3px black;
+        }
+
+
+        
+        #about-section {
+            padding: bottom 20px;
+            background-color: #161a31;
+        }
+
+        #committee-container {
+            background-color: #1e2343;
+            margin:0px; 
+        }
+
+        #theme {
+            margin:0px;
+            display:flex;
+            flex-direction: row;
+            width: 100%;
+            height:auto;
+            padding:0px;
+
+        }
+
+        #statecraft-trailer {
+            color:white;
+            background-color:#31396c;
+            font-family: "Poppins", serif;
+        }
+
+        /* media queries */
+
+        @media screen and (min-width:1024px) {
+           
+            #question > h1{
+                font-size:  145px;
+            }
+
+
+            #answer {
+                font-size:16px;
+            }
+
+            #letter-title, #letter-secondary-title { 
+                font-size:63px;
+            }
+
+            #secgen, #secgen-name {
+                font-size:28px;
+            }
+
+            #actual-letter {
+                font-size:20px;
+                margin:left 50px right 50px;
+            }
+           
+        }
+        
+        @media screen and (min-width: 1920px) {
+            #nav > a, #nav > a:hover, #nav > button, #nav >  ul > li > a {
+                font-size:32px;
+            }
+
+            #nav > h1 , #nav > h1:hover{
+                font-size:35px;
+            }
+
+            #answer {
+                font-size:24px;
+                margin: top 50px bottom 50px;
+            }
+
+            #question {
+                font-size:200px;
+            }
+
+            #letter-title, #letter-secondary-title { 
+                font-size:73px;
+            }
+
+            #secgen, #secgen-name {
+                font-size:32px;
+            }
+
+            #actual-letter {
+                font-size:32px;
+                margin:left 50px right 50px;
+            }
+           
+
+        }
+
+        @media screen and (min-width:2560px) {
+            #nav > a, #nav > a:hover, #nav > button, #nav >  ul > li > a{
+                font-size:55px;
+            }
+
+            #nav > h1 , #nav > h1:hover{
+                font-size:59px;
+            }
+
+            #question > h1 {
+                font-size:235px;
+            }
+
+            #answer {
+                font-size:30px;
+            }
+
+            #letter-title, #letter-secondary-title { 
+                font-size:80px;
+            }
+
+            #secgen, #secgen-name {
+                font-size:36px;
+            }
+
+            #actual-letter > p {
+                font-size:36px;
+                margin:left 50px right 50px;
+            }
+
+        }
