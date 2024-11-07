@@ -1,9 +1,11 @@
+        /* landing page */
 
         body {
             margin:0px;
             font-family: "Merriweather", serif;
             background-color: #121629;
             scroll-margin: 0px;
+            letter-spacing: 0.5px;;
         }
 
         #nav{
@@ -164,6 +166,7 @@
         #actual-letter {
             font-size:16.5px;
             text-align:left;
+            width:50%;
         }
 
         #title-text {
@@ -258,6 +261,74 @@
             font-family: "Poppins", serif;
         }
 
+        /* committeees page */
+
+        /* From Uiverse.io by Javierrocadev */ 
+  
+
+        #committee-container {
+            width:100%;
+            color:white;
+            justify-self:center;
+            border-radius: 20px;
+            padding:20px;
+        }
+
+        #committee-title-container {
+            margin-bottom:20px;
+            text-align: center;
+        }
+
+        #committee-title-column {
+            text-align: center;
+        }
+
+        .committee-title {
+            font-family: "Poppins", serif;
+            text-align:left;
+            font-size:112px;
+            font-weight:bolder;
+
+            margin:auto;
+        }
+
+        #agenda-container {
+            justify-self: center;
+            text-align: left;
+            width:80%;
+            font-family: "Merriweather", serif;
+            font-weight:bolder;
+            font-size:26px;
+        }
+
+        #committee-study-guide, #committee-matrix {
+            margin:auto;
+        }
+
+        #committee-study-guide {
+            width: 50%;
+        }
+
+        #committee-matrix {
+            width: 50%;
+        }
+        
+        #nato-title {
+            font-size:75px;
+        }
+
+        #versailles-title {
+            font-size:90px;
+        }
+
+        #kinshasa-title {
+            font-size:120px;
+        }
+
+        #unhrc-title {
+            font-size:80px;
+        }
+
         /* media queries */
 
         @media screen and (min-width:1024px) {
@@ -314,7 +385,6 @@
 
             #actual-letter {
                 font-size:32px;
-                margin:left 50px right 50px;
             }
            
 
@@ -351,3 +421,6 @@
             }
 
         }
+
+
+
